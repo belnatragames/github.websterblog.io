@@ -129,30 +129,38 @@ a:hover {
 footer {
   background-color: #024890; /* Webster Blue */
   text-align: center;
-  padding: 40px 20px 100px 20px; /* extra bottom padding for bigger circle */
+  padding: 40px 20px 160px 20px; /* extra bottom space for bigger circle */
   color: white;
   position: relative;
 }
 
+footer p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* Gorlok Circle Container */
 .footer-gorlok-container {
   display: flex;
   justify-content: center;
-  margin-top: 20px; /* space above circle */
+  margin-top: 20px; /* space above the circle */
 }
 
+/* Gorlok Circle */
 .footer-gorlok-circle {
   background-color: white;
   border-radius: 50%;
-  width: 250px;  /* bigger circle */
-  height: 250px;
+  width: 300px;   /* bigger circle */
+  height: 300px;  /* perfect circle */
   display: flex;
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
 }
 
+/* Gorlok Image */
 .footer-gorlok-circle img {
-  max-width: 180px; /* bigger mascot */
+  max-width: 220px; /* proportional to circle */
   height: auto;
   display: block;
 }
