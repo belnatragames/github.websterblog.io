@@ -1,165 +1,162 @@
-/* =========================
-   RESET
-========================= */
-* {
+/* ----------------------------- */
+/* Basic Reset & Typography */
+body, h1, h2, h3, p, ul, li, time, section, article {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* =========================
-   BODY
-========================= */
 body {
   font-family: 'franklin-gothic-urw', Arial, sans-serif;
-  background-color: #f4f4f4;
-  color: #222;
+  font-size: 16px;
   line-height: 1.6;
+  color: #000000;
+  background-color: #ffffff;
 }
 
-/* =========================
-   HEADER
-========================= */
+/* ----------------------------- */
+/* Header */
 header {
   background-color: #024890; /* Webster Blue */
   color: white;
+  padding: 20px;
   text-align: center;
-  padding: 25px 20px;
 }
 
-header img.logo {
-  width: 220px;
+header img {
+  max-width: 250px; /* bigger logo */
+  height: auto;
+  display: block;
+  margin: 0 auto 10px auto;
+}
+
+header h1 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 5px;
+}
+
+header p {
+  font-weight: 400;
+  font-size: 1.2rem;
   margin-bottom: 15px;
 }
 
+/* ----------------------------- */
+/* Navigation */
 nav ul {
   list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
   margin-bottom: 15px;
-}
-
-nav ul li {
-  display: inline;
-  margin: 0 20px;
 }
 
 nav a {
-  color: #f5b706;     /* Webster Gold */
+  color: white;
   font-weight: bold;
   text-decoration: none;
 }
 
 nav a:hover {
-  text-decoration: underline;
+  color: #f5b706; /* Webster Gold */
 }
 
-/* =========================
-   MAIN CONTENT
-========================= */
+/* ----------------------------- */
+/* Main Content */
 main {
+  padding: 40px 20px;
   max-width: 900px;
-  margin: 50px auto;
-  padding: 0 20px;
+  margin: 0 auto;
 }
 
-
-/* =========================
- SECTION SPACING
-========================= */
+/* Sections on index.html */
 main section {
-  margin-bottom: 50px; /* increase spacing between sections */
+  margin-bottom: 50px; /* extra spacing between sections */
 }
 
-/* =========================
-   ARTICLES (Blog)
-========================= */
+/* Blog articles */
 article {
-  background: white;
   margin-bottom: 50px;
-  padding: 25px;
-  border-radius: 6px;
 }
 
 article img {
   width: 100%;
-  height: 360px;
-  object-fit: cover;
-  border-radius: 6px;
-  margin-bottom: 20px;
+  height: 300px; /* consistent rectangular size */
+  object-fit: cover; /* crop images nicely */
+  margin-bottom: 15px;
+  border-radius: 5px;
 }
 
 article h2 {
-  margin-bottom: 10px;
-  color: #024890; /* Webster Blue */
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #024890;
+  margin-bottom: 8px;
 }
 
-/* Published Date Badge */
+/* Blog post meta (date/time) */
 .post-meta {
-  margin-bottom: 15px;
-}
-
-.post-meta time {
-  background-color: #024890; /* Blue background */
-  color: #f5b706;             /* Gold text */
-  padding: 3px 8px;
-  border-radius: 4px;
+  display: inline-block;
+  background-color: #024890;
+  color: #f5b706; /* gold text */
   font-weight: bold;
   font-size: 0.9rem;
-  display: inline-block;
+  padding: 2px 8px; /* short bar just taller than text */
+  border-radius: 3px;
+  margin-bottom: 10px;
 }
 
-/* =========================
-   LINKS
-========================= */
+/* Paragraphs */
+article p, main section p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+/* Links inside main content */
 a {
-  color: #024890;       /* Blue links in main content */
+  color: #024890; /* blue links */
   font-weight: bold;
   text-decoration: none;
 }
 
 a:hover {
-  color: #f5b706;       /* Gold hover */
-  text-decoration: underline;
+  color: #f5b706; /* gold hover */
 }
 
-/* =========================
-   FOOTER (Final Fix)
-========================= */
+/* ----------------------------- */
+/* Footer */
 footer {
   background-color: #024890;
   color: white;
   text-align: center;
-  padding: 40px 20px 60px; /* reduce extra bottom padding, more consistent */
+  padding: 30px 20px 60px 20px; /* extra bottom padding for mascot */
   position: relative;
 }
 
-/* Footer Copyright */
 footer p {
-  margin-bottom: 20px; /* space above mascot */
-  font-weight: bold;
+  margin-bottom: 20px;
+  font-size: 1rem;
 }
 
-/* Gorlok Circle Container */
+/* Footer Gorlok mascot circle */
 .footer-gorlok-container {
   display: flex;
   justify-content: center;
-  margin-top: 0;
 }
 
-/* White Circle Behind Gorlok */
 .footer-gorlok-circle {
   background-color: white;
   border-radius: 50%;
-  width: 120px;  /* smaller */
+  width: 120px;  /* smaller than before */
   height: 120px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* Gorlok Image */
 .footer-gorlok-circle img {
-  max-width: 90px; /* fits nicely inside the circle */
+  max-width: 80px; /* fits nicely inside circle */
   height: auto;
   display: block;
 }
-
