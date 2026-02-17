@@ -124,11 +124,12 @@ a:hover {
   color: #f5b706; /* gold hover */
 }
 
-/* Footer Gorlok mascot circle */
+/* ----------------------------- */
+/* Footer */
 footer {
   background-color: #024890; /* Webster Blue */
   text-align: center;
-  padding: 40px 20px 80px 20px; /* extra bottom padding to fit circle */
+  padding: 40px 20px 100px 20px; /* extra bottom padding for bigger circle */
   color: white;
   position: relative;
 }
@@ -136,14 +137,14 @@ footer {
 .footer-gorlok-container {
   display: flex;
   justify-content: center;
-  margin-top: 15px; /* space above circle */
+  margin-top: 20px; /* space above circle */
 }
 
 .footer-gorlok-circle {
   background-color: white;
   border-radius: 50%;
-  width: 180px;  /* bigger circle */
-  height: 180px;
+  width: 250px;  /* bigger circle */
+  height: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -151,9 +152,10 @@ footer {
 }
 
 .footer-gorlok-circle img {
-  max-width: 120px; /* bigger mascot */
+  max-width: 180px; /* bigger mascot */
   height: auto;
   display: block;
 }
+
 
 
