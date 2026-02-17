@@ -125,25 +125,35 @@ a:hover {
 }
 
 /* Footer Gorlok mascot circle */
+footer {
+  background-color: #024890; /* Webster Blue */
+  text-align: center;
+  padding: 40px 20px 80px 20px; /* extra bottom padding to fit circle */
+  color: white;
+  position: relative;
+}
+
 .footer-gorlok-container {
   display: flex;
   justify-content: center;
-  margin-top: 10px; /* add a little spacing above circle */
+  margin-top: 15px; /* space above circle */
 }
 
 .footer-gorlok-circle {
   background-color: white;
   border-radius: 50%;
-  width: 150px;  /* slightly bigger */
-  height: 150px; /* keep perfect circle */
+  width: 180px;  /* bigger circle */
+  height: 180px;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-shrink: 0;
 }
 
 .footer-gorlok-circle img {
-  max-width: 100px; /* slightly bigger image */
+  max-width: 120px; /* bigger mascot */
   height: auto;
   display: block;
 }
+
 
