@@ -24,10 +24,10 @@ header {
 }
 
 header img {
-  max-width: 250px; /* bigger logo */
+  max-width: 220px; /* consistent size for all pages */
   height: auto;
   display: block;
-  margin: 0 auto 10px auto;
+  margin: 0 auto 15px auto;
 }
 
 header h1 {
@@ -70,9 +70,9 @@ main {
   margin: 0 auto;
 }
 
-/* Sections on index.html */
+/* Extra spacing between sections on index.html */
 main section {
-  margin-bottom: 50px; /* extra spacing between sections */
+  margin-bottom: 60px; /* more vertical space */
 }
 
 /* Blog articles */
@@ -148,7 +148,7 @@ footer p {
 .footer-gorlok-circle {
   background-color: white;
   border-radius: 50%;
-  width: 120px;  /* smaller than before */
+  width: 120px;  /* smaller */
   height: 120px;
   display: flex;
   justify-content: center;
