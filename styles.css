@@ -1,0 +1,156 @@
+/* =========================
+   RESET
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =========================
+   BODY
+========================= */
+body {
+  font-family: 'franklin-gothic-urw', Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* =========================
+   HEADER
+========================= */
+header {
+  background-color: #024890; /* Webster Blue */
+  color: white;
+  text-align: center;
+  padding: 25px 20px;
+}
+
+header img.logo {
+  width: 220px;
+  margin-bottom: 15px;
+}
+
+nav ul {
+  list-style: none;
+  margin-bottom: 15px;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 20px;
+}
+
+nav a {
+  color: #f5b706;     /* Webster Gold */
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   MAIN CONTENT
+========================= */
+main {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+/* =========================
+   ARTICLES (Blog)
+========================= */
+article {
+  background: white;
+  margin-bottom: 50px;
+  padding: 25px;
+  border-radius: 6px;
+}
+
+article img {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+article h2 {
+  margin-bottom: 10px;
+  color: #024890; /* Webster Blue */
+}
+
+/* Published Date Badge */
+.post-meta {
+  margin-bottom: 15px;
+}
+
+.post-meta time {
+  background-color: #024890; /* Blue background */
+  color: #f5b706;             /* Gold text */
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  display: inline-block;
+}
+
+/* =========================
+   LINKS
+========================= */
+a {
+  color: #024890;       /* Blue links in main content */
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #f5b706;       /* Gold hover */
+  text-decoration: underline;
+}
+
+/* =========================
+   FOOTER (Final Fix)
+========================= */
+footer {
+  background-color: #024890;
+  color: white;
+  text-align: center;
+  padding: 40px 20px 60px; /* reduce extra bottom padding, more consistent */
+  position: relative;
+}
+
+/* Footer Copyright */
+footer p {
+  margin-bottom: 20px; /* space above mascot */
+  font-weight: bold;
+}
+
+/* Gorlok Circle Container */
+.footer-gorlok-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+}
+
+/* White Circle Behind Gorlok */
+.footer-gorlok-circle {
+  background-color: white;
+  border-radius: 50%;
+  width: 120px;  /* smaller */
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Gorlok Image */
+.footer-gorlok-circle img {
+  max-width: 90px; /* fits nicely inside the circle */
+  height: auto;
+  display: block;
+}
