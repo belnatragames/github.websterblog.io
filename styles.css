@@ -165,5 +165,15 @@ footer p {
   display: block;
 }
 
+/* Section Images Styling */
+main section img {
+  display: block;          /* centers image horizontally */
+  margin: 1rem auto;       /* vertical spacing + horizontal centering */
+  max-width: 90%;          /* slightly smaller than full width */
+  height: auto;            /* keep aspect ratio */
+  border-radius: 8px;      /* slightly rounded corners */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* optional subtle shadow */
+}
+
 
 
